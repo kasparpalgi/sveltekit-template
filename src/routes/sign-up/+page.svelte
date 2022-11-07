@@ -1,1 +1,1 @@
-<h1>Sign up</h1>
+<h1 class="text-3xl font-bold">Sign-up</h1>
