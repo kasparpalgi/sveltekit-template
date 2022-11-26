@@ -4,6 +4,9 @@
 
 <nav class="relative container mx-auto p-6">
 	<div class="flex items-center justify-between">
+		<div class="pt-2">
+			<img src="/img/logo-white.svg" alt="">
+		</div>
 		<a href="/" class:nav-active-route={$page.url.pathname === '/'}>Home</a>
 		<a href="/about" class:nav-active-route={$page.url.pathname === '/about'}>About</a>
 		<a href="/sign-up" class:nav-active-route={$page.url.pathname === '/sign-up'}>Sign up</a>
