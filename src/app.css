@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .nav-active-route {
-    @apply border-b-2 border-cyan-300;
+	@apply border-b-2 border-cnRed;
 }
