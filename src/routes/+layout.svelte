@@ -3,10 +3,8 @@
 	import '../app.css';
 </script>
 
-<div style="bg-slate-100 h-screen">
+<nav class="relative container mx-auto p-6">
 	<Header />
-</div>
+</nav>
 
-<div class="max-w-max mx-auto">
-	<slot />
-</div>
+<slot />
