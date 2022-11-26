@@ -7,7 +7,7 @@
 	<div class="pt-2">
 		<img src="/img/logo-white.svg" alt="" />
 	</div>
-	<!-- Menu -->
+	<!-- Menu items-->
 	<div class="hidden md:flex space-x-6">
 		<a
 			href="/"
