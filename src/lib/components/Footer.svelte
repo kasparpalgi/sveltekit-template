@@ -49,7 +49,7 @@
 			</div>
 			<div class="flex flex-col space-y-3 text-white">
 				<a href="/for-employees" class="hover:text-brightRed">For employees</a>
-				<a href="/self-growth" class="hover:text-brightRed">Self-growth</a>
+				<a href="/self-growth" class="hover:text-brightRed">Integrate anywhere</a>
 				<a href="/sign-up" class="hover:text-brightRed">Sign-up Free</a>
 			</div>
 		</div>
