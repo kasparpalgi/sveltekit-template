@@ -31,4 +31,10 @@
 		class="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
 		>Free Forever</a
 	>
+	<!-- Hamburger Icon -->
+	<button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+		<span class="hamburger-top" />
+		<span class="hamburger-middle" />
+		<span class="hamburger-bottom" />
+	</button>
 </div>
