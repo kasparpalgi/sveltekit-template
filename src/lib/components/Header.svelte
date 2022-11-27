@@ -36,22 +36,27 @@
 		>Free Forever</a
 	>
 	<!-- Hamburger Icon -->
-	<button on:click={toggleMobileMenu} id="menu-btn" class:open={mobileMenuOpen} class="block hamburger md:hidden focus:outline-none">
+	<button
+		on:click={toggleMobileMenu}
+		id="menu-btn"
+		class:open={mobileMenuOpen}
+		class="block hamburger md:hidden focus:outline-none"
+	>
 		<span class="hamburger-top" />
 		<span class="hamburger-middle" />
 		<span class="hamburger-bottom" />
 	</button>
 </div>
 {#if mobileMenuOpen}
-<!-- Mobile Menu -->
-<div class="md:hidden">
-	<div
-		id="menu"
-		class="absolute flex flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
-	>
-		<a href="/">Home</a>
-		<a href="/about">About</a>
-		<a href="/sign-up">Sign-up FREE</a>
+	<!-- Mobile Menu -->
+	<div class="md:hidden">
+		<div
+			id="menu"
+			class="absolute flex flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+		>
+			<a href="/">Home</a>
+			<a href="/about">About</a>
+			<a href="/sign-up">Sign-up FREE</a>
+		</div>
 	</div>
-</div>
 {/if}
