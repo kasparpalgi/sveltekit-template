@@ -5,7 +5,7 @@
 <div class="flex items-center justify-between">
 	<!-- Logo -->
 	<div class="pt-2">
-		<img src="/img/logo-white.svg" alt="" />
+		<img src="/img/logo.svg" alt="" />
 	</div>
 	<!-- Menu items-->
 	<div class="hidden md:flex space-x-6">
