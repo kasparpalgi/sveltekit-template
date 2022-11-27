@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Testimonials from '$lib/components/Testimonials.svelte';
+	import CTA from '$lib/components/CTA.svelte';
 </script>
 
 <!-- Hero Section -->
@@ -122,3 +123,4 @@
 	</div>
 </section>
 <Testimonials />
+<CTA />
