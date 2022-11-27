@@ -18,23 +18,19 @@
 			<!-- Social Links Container -->
 			<div class="flex justify-center space-x-4">
 				<!-- Link 1 -->
-				<a href="#">
+				<a href="https://www.facebook.com/klarity.transparency">
 					<img src="/img/icon-facebook.svg" alt="" class="h-8" />
 				</a>
 				<!-- Link 2 -->
-				<a href="#">
+				<a href="https://www.linkedin.com/showcase/86278133">
 					<img src="/img/icon-youtube.svg" alt="" class="h-8" />
 				</a>
 				<!-- Link 3 -->
-				<a href="#">
+				<a href="https://twitter.com/get_klarity">
 					<img src="/img/icon-twitter.svg" alt="" class="h-8" />
 				</a>
 				<!-- Link 4 -->
-				<a href="#">
-					<img src="/img/icon-pinterest.svg" alt="" class="h-8" />
-				</a>
-				<!-- Link 5 -->
-				<a href="#">
+				<a href="https://www.instagram.com/klarity.app/">
 					<img src="/img/icon-instagram.svg" alt="" class="h-8" />
 				</a>
 			</div>
