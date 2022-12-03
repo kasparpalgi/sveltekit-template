@@ -8,7 +8,7 @@
 <div>{@html data.content}</div>
 
 <div class="flex flex-col">
-{#each data.movies as movie}
-	<p>{movie.title}</p>
+{#each data.cms as page}
+	<p>{page.menu_title}</p>
 {/each}
 </div>

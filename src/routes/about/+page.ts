@@ -1,35 +1,47 @@
 /** @type {import('./$types').PageLoad} */
 export async function load() {
-  const data = await fetch('https://www.learnwithjason.dev/graphql', {
+  const data = await fetch('https://apps.crewnew.com/v1/graphql', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
+      'X-Hasura-Admin-Secret': '************',
     },
     body: JSON.stringify({
       query: `
-          query GetLearnWithJasonEpisodes($now: DateTime!) {
-            allEpisode(limit: 10, sort: {date: ASC}, where: {date: {gte: $now}}) {
-              date
+          query CmsPagesByParent {
+            cms_pages(where: {parent: {_eq: 57}, status: {_eq: "published"}}, order_by: {sort: asc}) {
+              sort
+              url_alias
+              menu_title
               title
-              guest {
-                name
-                twitter
-              }
+              title2
+              image_main
               description
+              title_tag
+              title_og
+              meta_description
+              description_og
+              image_og
+              cms_pages_cms_page_contents {
+                sort
+                cms_page_content {
+                  order
+                  name
+                  content
+                  image
+                }
+              }
             }
           }
         `,
-      variables: {
-        now: new Date().toISOString(),
-      },
     }),
   })
   const json = await data.json();
-  //console.log(json.data.allEpisode);
+  console.log(json.data.cms_pages);
 
   return {
     title: 'About',
     content: 'Some content here, and some content. Some content here, and some content.',
-    movies: json.data.allEpisode
+    cms: json.data.cms_pages
   };
 }
