@@ -8,7 +8,7 @@
 <div>{@html data.content}</div>
 
 <div class="flex flex-col">
-{#each data.pokemon as pokemon}
-	<p>{pokemon.name}</p>
+{#each data.movies as movie}
+	<p>{movie.title}</p>
 {/each}
 </div>
