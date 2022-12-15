@@ -1,10 +1,12 @@
 /** @type {import('./$types').PageLoad} */
+import 'dotenv/config';
+const hasuraAdminSecret = process.env.X_HASURA_ADMIN_SECRET;
 export async function load() {
   const data = await fetch('https://apps.crewnew.com/v1/graphql', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'X-Hasura-Admin-Secret': '************',
+      'X-Hasura-Admin-Secret': hasuraAdminSecret,
     },
     body: JSON.stringify({
       query: `
